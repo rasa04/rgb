@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rest.css">
+	<title>RGB set</title>
+</head>
+<body>
+	<div id="color">
+		<div class="panel">
+            <div class="input">
+                <input min="0" max="255" value="91" type="number" name="red" id="red">
+                <div class="regulators">
+                    <button onmousedown="si('red', 'inc')" onmouseup="csi()">+</button>
+                    <button onmousedown="si('red', 'dec')" onmouseup="csi()">-</button>
+                </div>
+            </div>
+            <div class="input">
+                <input min="0" max="255" value="31" type="number" name="green" id="green">
+                <div class="regulators">
+                    <button onmousedown="si('green', 'inc')" onmouseup="csi()">+</button>
+                    <button onmousedown="si('green', 'dec')" onmouseup="csi()">-</button>
+                </div>
+            </div>
+            <div class="input">
+                <input min="0" max="255" value="84" type="number" name="blue" id="blue">
+                <div class="regulators">
+                    <button onmousedown="si('blue', 'inc')" onmouseup="csi()">+</button>
+                    <button onmousedown="si('blue', 'dec')" onmouseup="csi()">-</button>
+                </div>
+            </div>
+		</div>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>
